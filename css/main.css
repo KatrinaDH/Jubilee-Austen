@@ -5,31 +5,16 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/***** GRID *****/
-
-.full-width {
-  margin: 0 auto;
-  overflow: auto;
-  width: 1200px;
-}
-
-.half-width {
-  float: left;
-  width: 600px;
-}
-
-.third-width {
-  float: left;
-  width: 400px;
-}
 
 /***** HEADER *****/
 
 header {
     background: url('../img/full-background.png');
-    background-size: cover;
-    background-position: center;
     height: 800px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 header h1 {
@@ -39,11 +24,11 @@ header h1 {
     padding: 65px 0 65px 25px;
 }
 
-nav {
-    float: right;
-    padding: 75px 25px;
+header nav ul {
+  display: flex;
+  width: 100%;
+  margin: 0;
 }
-
 nav ul li{
     display: inline-block;
 }
@@ -51,13 +36,12 @@ nav ul li{
 nav ul li a {
     color: #828282;
     font-size: 18px;
-    padding-left: 80px;
+    padding-left: 50px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 header h2 {
-    clear: left;
     color: #9b9b9b;
     font-family: 'Lora';
     font-size: 70px;
@@ -131,7 +115,7 @@ header h2 span {
 
 #contact img#contact-img{
     border: 12px solid #ffffff;
-    margin-left: 25px;
+    margin-left: 230px;
 }
 
 #contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
@@ -179,4 +163,15 @@ header h2 span {
 
 #contact ul img {
     padding-right: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+
 }
